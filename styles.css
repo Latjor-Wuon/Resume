@@ -1,3 +1,4 @@
+/* Default styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -35,8 +36,6 @@ nav ul li a:hover {
 
 h1 {
     text-align: center;
-    justify-items: center;
-    justify-content: center;
     margin-top: 15%;
 }
 
@@ -48,4 +47,36 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+
+/* Media queries for responsiveness */
+/* For smartphones */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    h1 {
+        margin-top: 10%;
+    }
+}
+
+/* For tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    nav ul li {
+        margin-right: 10px;
+    }
+}
+
+/* For computers */
+@media only screen and (min-width: 1025px) {
+    body {
+        padding-bottom: 50px; /* Adjust footer position */
+    }
 }
