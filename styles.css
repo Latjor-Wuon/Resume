@@ -14,12 +14,13 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav ul li {
     display: inline;
     margin-right: 20px;
-    justify-content: space-between;
 }
 
 nav ul li a {
@@ -33,6 +34,9 @@ nav ul li a:hover {
 
 h1 {
     text-align: center;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 15%;
 }
 
 footer {
